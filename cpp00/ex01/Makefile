@@ -1,19 +1,19 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    makefile                                           :+:      :+:    :+:    #
+#    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: tborges- <tborges-@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/10 11:39:05 by tborges-          #+#    #+#              #
-#    Updated: 2025/05/10 11:46:53 by tborges-         ###   ########.fr        #
+#    Updated: 2025/05/10 19:57:35 by tborges-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = megaphone
+NAME = phonebook
 
 SRC_DIR = src
-SRC = $(SRC_DIR)/megaphone.cpp
+SRC = $(SRC_DIR)/Contact.cpp $(SRC_DIR)/PhoneBook.cpp $(SRC_DIR)/main.cpp
 
 CXX = @c++
 CXXFLAGS = -std=c++98 -Wall -Wextra -Werror
