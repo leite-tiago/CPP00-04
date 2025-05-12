@@ -6,14 +6,12 @@
 /*   By: tborges- <tborges-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/11 00:13:57 by tborges-          #+#    #+#             */
-/*   Updated: 2025/05/11 16:41:34 by tborges-         ###   ########.fr       */
+/*   Updated: 2025/05/12 12:14:56 by tborges-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/Account.hpp"
 #include <iostream>
-#include <ctime>
-#include <iomanip>
 
 int	Account::getNbAccounts()
 {
@@ -81,7 +79,7 @@ void Account::makeDeposit(int deposit)
 		<< this->_nbDeposits << std::endl;
 }
 
-bool	Account::makeWithdrawal( int withdrawal )
+bool	Account::makeWithdrawal(int withdrawal)
 {
 	_displayTimestamp();
 	std::cout << " index:" << _accountIndex << ";p_amount:" << _amount;
@@ -121,14 +119,17 @@ int Account::_totalAmount = 0;
 int Account::_totalNbDeposits = 0;
 int Account::_totalNbWithdrawals = 0;
 
-void	Account::_displayTimestamp( void )
+void	Account::_displayTimestamp()
 {
-	std::time_t now = std::time(nullptr);
-	std::tm *ltm = std::localtime(&now);
+	time_t rawtime;
+	struct tm *timeinfo;
+	char buffer[20];
 
-	std::cout << "["
-	          << std::put_time(ltm, "%Y%m%d_%H%M%S")
-	          << "]";
+	time (&rawtime);
+	timeinfo = localtime(&rawtime);
+
+	strftime(buffer, 20, "%Y%m%d_%H%M%S", timeinfo);
+	std::cout << "[" << buffer << "]";
 }
 
 Account::Account()
