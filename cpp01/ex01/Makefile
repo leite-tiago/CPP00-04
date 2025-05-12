@@ -6,14 +6,14 @@
 #    By: tborges- <tborges-@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/11 18:51:26 by tborges-          #+#    #+#              #
-#    Updated: 2025/05/12 15:43:14 by tborges-         ###   ########.fr        #
+#    Updated: 2025/05/12 15:42:37 by tborges-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = BraiiiiiiinnnzzzZ
+NAME = MoarBrainz
 
 SRC_DIR = src
-SRC = $(SRC_DIR)/Zombie.cpp $(SRC_DIR)/newZombie.cpp $(SRC_DIR)/randomChump.cpp $(SRC_DIR)/main.cpp
+SRC = $(SRC_DIR)/Zombie.cpp $(SRC_DIR)/zombieHorde.cpp $(SRC_DIR)/main.cpp
 
 CXX = @c++
 CXXFLAGS = -std=c++98 -Wall -Wextra -Werror
