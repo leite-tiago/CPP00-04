@@ -6,14 +6,14 @@
 #    By: tborges- <tborges-@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/11 18:51:26 by tborges-          #+#    #+#              #
-#    Updated: 2025/05/13 13:40:50 by tborges-         ###   ########.fr        #
+#    Updated: 2025/05/13 14:16:37 by tborges-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = SedIsForLosers
+NAME = Harl
 
 SRC_DIR = src
-SRC = $(SRC_DIR)/main.cpp
+SRC = $(SRC_DIR)/main.cpp $(SRC_DIR)/Harl.cpp
 
 CXX = @c++
 CXXFLAGS = -std=c++98 -Wall -Wextra -Werror
@@ -39,7 +39,6 @@ clean:
 
 fclean: clean
 	@rm -f $(NAME)
-	@rm -f input.txt.replace
 
 re: fclean all
 
