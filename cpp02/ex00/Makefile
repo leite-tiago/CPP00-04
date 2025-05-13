@@ -6,17 +6,17 @@
 #    By: tborges- <tborges-@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/11 18:51:26 by tborges-          #+#    #+#              #
-#    Updated: 2025/05/13 14:53:53 by tborges-         ###   ########.fr        #
+#    Updated: 2025/05/13 15:22:14 by tborges-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = harlFilter
+NAME = fixed
 
 SRC_DIR = src
-SRC = $(SRC_DIR)/main.cpp $(SRC_DIR)/Harl.cpp
+SRC = $(SRC_DIR)/main.cpp $(SRC_DIR)/Fixed.cpp
 
 CXX = @c++
-CXXFLAGS = -std=c++98 -Wall -Wextra
+CXXFLAGS = -std=c++98 -Wall -Wextra -Werror
 
 OBJ_DIR = obj
 OBJS = $(SRC:$(SRC_DIR)/%.cpp=$(OBJ_DIR)/%.o)
