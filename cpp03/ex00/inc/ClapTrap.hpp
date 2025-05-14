@@ -6,7 +6,7 @@
 /*   By: tborges- <tborges-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/14 12:05:32 by tborges-          #+#    #+#             */
-/*   Updated: 2025/05/14 12:12:46 by tborges-         ###   ########.fr       */
+/*   Updated: 2025/05/14 14:28:23 by tborges-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ class ClapTrap
 		ClapTrap();
 		ClapTrap(std::string name);
 		ClapTrap(const ClapTrap& other);
-		ClapTrap& operator=(const ClapTrap& ref);
+		ClapTrap& operator=(const ClapTrap& other);
 		~ClapTrap();
 
 		void attack(const std::string& target);
