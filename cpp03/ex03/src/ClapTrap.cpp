@@ -6,7 +6,7 @@
 /*   By: tborges- <tborges-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/14 12:03:38 by tborges-          #+#    #+#             */
-/*   Updated: 2025/05/14 19:39:48 by tborges-         ###   ########.fr       */
+/*   Updated: 2025/05/14 19:39:11 by tborges-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ ClapTrap::ClapTrap(std::string name)
 	_attackDamage = 0;
 
 	std::cout << "ClapTrap " << _name << " created!" << std::endl;
+
 }
 
 ClapTrap::ClapTrap(const ClapTrap& other)

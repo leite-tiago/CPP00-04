@@ -6,7 +6,7 @@
 /*   By: tborges- <tborges-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/14 15:28:26 by tborges-          #+#    #+#             */
-/*   Updated: 2025/05/14 16:05:10 by tborges-         ###   ########.fr       */
+/*   Updated: 2025/05/14 19:39:39 by tborges-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ ScavTrap::ScavTrap()
 
 ScavTrap::ScavTrap(std::string name) : ClapTrap(name)
 {
+	_name = name;
 	_hitPoints = 100;
 	_energyPoints = 50;
 	_attackDamage = 20;
@@ -27,6 +28,10 @@ ScavTrap::ScavTrap(std::string name) : ClapTrap(name)
 
 ScavTrap::ScavTrap(const ScavTrap& other) : ClapTrap(other)
 {
+	_name = other._name;
+	_hitPoints = other._hitPoints;
+	_energyPoints = other._energyPoints;
+	_attackDamage = other._attackDamage;
 	std::cout << "ScavTrap " << _name << " created from ScavTrap "
 			  << other._name << std::endl;
 }
@@ -45,7 +50,7 @@ ScavTrap& ScavTrap::operator=(const ScavTrap& other)
 
 ScavTrap::~ScavTrap()
 {
-	std::cout << "ScavTrap " << _name << " detroyed!" << std::endl;
+	std::cout << "ScavTrap " << _name << " destroyed!" << std::endl;
 }
 
 void ScavTrap::attack(const std::string& target)
@@ -63,5 +68,5 @@ void ScavTrap::attack(const std::string& target)
 
 void ScavTrap::guardGate()
 {
-	std::cout << _name << " is now in Gate Keeper Mode." << std::endl;
+	std::cout << "ScavTrap " << _name << " is now in Gate Keeper Mode." << std::endl;
 }

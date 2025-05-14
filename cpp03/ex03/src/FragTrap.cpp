@@ -6,7 +6,7 @@
 /*   By: tborges- <tborges-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/14 16:34:09 by tborges-          #+#    #+#             */
-/*   Updated: 2025/05/14 19:39:26 by tborges-         ###   ########.fr       */
+/*   Updated: 2025/05/14 20:04:55 by tborges-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,12 @@
 
 FragTrap::FragTrap()
 {
+	_hitPoints = 100;
+	_energyPoints = 100;
+	_attackDamage = 30;
 }
 
-FragTrap::FragTrap(std::string name) : ClapTrap(name)
+FragTrap::FragTrap(std::string name) // : ClapTrap(name)
 {
 	_name = name;
 	_hitPoints = 100;
