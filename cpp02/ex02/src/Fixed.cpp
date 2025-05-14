@@ -152,13 +152,11 @@ Fixed const &Fixed::max(const Fixed &ref1, const Fixed &ref2)
 
 int		Fixed::getRawBits() const
 {
-	std::cout << "getRawBits member function called" << std::endl;
 	return _fixed_point_number_value;
 }
 
 void	Fixed::setRawBits(int const raw)
 {
-	std::cout << "setRawBits member function called" << std::endl;
 	_fixed_point_number_value = raw;
 }
 
