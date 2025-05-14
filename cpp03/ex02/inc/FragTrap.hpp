@@ -6,14 +6,13 @@
 /*   By: tborges- <tborges-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/14 16:34:18 by tborges-          #+#    #+#             */
-/*   Updated: 2025/05/14 18:40:03 by tborges-         ###   ########.fr       */
+/*   Updated: 2025/05/15 00:33:31 by tborges-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FRAGTRAP_HPP
 #define FRAGTRAP_HPP
 #include "ClapTrap.hpp"
-#include <iostream>
 
 class FragTrap : public ClapTrap
 {

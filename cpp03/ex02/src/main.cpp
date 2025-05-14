@@ -6,7 +6,7 @@
 /*   By: tborges- <tborges-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/14 12:03:44 by tborges-          #+#    #+#             */
-/*   Updated: 2025/05/14 17:46:46 by tborges-         ###   ########.fr       */
+/*   Updated: 2025/05/15 00:30:36 by tborges-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,15 +19,6 @@ int main() {
         a.attack("Bandit");
         a.beRepaired(5);
         a.takeDamage(6);
-    }
-    std::cout << std::endl;
-    {
-        std::cout << "\n---- Creating ScavTrap ----" << std::endl;
-        ScavTrap s("SC4V-TP");
-        s.attack("Raid Boss");
-        s.beRepaired(10);
-        s.takeDamage(40);
-        s.guardGate();
     }
     std::cout << std::endl;
     {

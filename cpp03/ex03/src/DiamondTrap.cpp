@@ -6,7 +6,7 @@
 /*   By: tborges- <tborges-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/14 16:34:09 by tborges-          #+#    #+#             */
-/*   Updated: 2025/05/14 20:05:23 by tborges-         ###   ########.fr       */
+/*   Updated: 2025/05/15 00:20:42 by tborges-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,6 @@ DiamondTrap::DiamondTrap(std::string name) : ClapTrap(name + "_clap_name"), Scav
 	_attackDamage = FragTrap::_attackDamage;
 
 	std::cout << "DiamondTrap " << _name << " created!" << std::endl;
-	std::cout << "DEBUG - DiamondTrap::_name: " << _name << std::endl;
-	std::cout << "DEBUG - ClapTrap::_name: " << ClapTrap::_name << std::endl;
 }
 
 DiamondTrap::DiamondTrap(const DiamondTrap& other) : ClapTrap(other), ScavTrap(other), FragTrap(other)

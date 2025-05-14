@@ -6,14 +6,13 @@
 /*   By: tborges- <tborges-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/14 15:28:16 by tborges-          #+#    #+#             */
-/*   Updated: 2025/05/14 15:33:57 by tborges-         ###   ########.fr       */
+/*   Updated: 2025/05/15 00:34:17 by tborges-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef SCAVTRAP_HPP
 #define SCAVTRAP_HPP
 #include "ClapTrap.hpp"
-#include <iostream>
 
 class ScavTrap : public ClapTrap
 {

@@ -6,7 +6,7 @@
 /*   By: tborges- <tborges-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/14 16:34:09 by tborges-          #+#    #+#             */
-/*   Updated: 2025/05/14 19:06:13 by tborges-         ###   ########.fr       */
+/*   Updated: 2025/05/15 00:33:47 by tborges-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 #define DIAMONDTRAP_HPP
 #include "FragTrap.hpp"
 #include "ScavTrap.hpp"
-#include <iostream>
 
 class DiamondTrap : public ScavTrap, public FragTrap
 {
