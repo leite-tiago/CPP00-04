@@ -1,32 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Fixed.hpp                                          :+:      :+:    :+:   */
+/*   ClapTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tborges- <tborges-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/05/13 15:11:20 by tborges-          #+#    #+#             */
-/*   Updated: 2025/05/14 14:01:08 by tborges-         ###   ########.fr       */
+/*   Created: 2025/05/14 12:03:38 by tborges-          #+#    #+#             */
+/*   Updated: 2025/05/14 12:15:10 by tborges-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FIXED_HPP
-#define FIXED_HPP
-#include <iostream>
+#include "../inc/ClapTrap.hpp"
 
-class Fixed {
-	private:
-		int _value;
-		static const int _fractionalBits = 8;
+ClapTrap::ClapTrap()
+{
+}
 
-	public:
-		Fixed();
-		Fixed(const Fixed& other);
-		Fixed& operator=(const Fixed& other);
-		~Fixed();
+ClapTrap::ClapTrap(std::string name)
+{
+	_name = name;
+	_hitPoints = 10;
+	_energyPoints = 10;
+	_attackDamage = 0;
 
-		int getRawBits() const;
-		void setRawBits(int const raw);
-};
+	std::cout << "ClapTrap " << name << " was born" << std::endl;
+}
 
-#endif
