@@ -1,44 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Dog.cpp                                            :+:      :+:    :+:   */
+/*   Dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tborges- <tborges-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/15 00:48:54 by tborges-          #+#    #+#             */
-/*   Updated: 2025/05/15 01:36:07 by tborges-         ###   ########.fr       */
+/*   Updated: 2025/05/15 01:34:20 by tborges-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../inc/Dog.hpp"
+#ifndef DOG_HPP
+# define DOG_HPP
 
-Dog::Dog()
-{
-	type = "Dog";
-	std::cout << "Dog default constructor called\n";
-}
+# include "Animal.hpp"
+# include "Brain.hpp"
 
-Dog::Dog(const Dog &other) : Animal(other)
+class Dog : public Animal
 {
-	std::cout << "Dog copy constructor called\n";
-	*this = other;
-}
+	private:
+		Brain* brain;
 
-Dog &Dog::operator=(const Dog &other)
-{
-	std::cout << "Dog copy assignment operator called\n";
-	if (this != &other) {
-		Animal::operator=(other);
-	}
-	return *this;
-}
+	public:
+		Dog();
+		Dog(const Dog& other);
+		Dog& operator=(const Dog& other);
+		~Dog();
 
-Dog::~Dog()
-{
-	std::cout << "Dog destructor called\n";
-}
+		void makeSound() const;
+		Brain* getBrain() const;
+};
 
-void Dog::makeSound() const
-{
-	std::cout << "Woof! 🐶\n";
-}
+#endif
+
+
