@@ -6,7 +6,7 @@
 /*   By: tborges- <tborges-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/15 13:31:48 by tborges-          #+#    #+#             */
-/*   Updated: 2025/05/15 13:34:40 by tborges-         ###   ########.fr       */
+/*   Updated: 2025/05/15 14:08:32 by tborges-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,6 @@ bool bsp(Point const a, Point const b, Point const c, Point const point)
 	Fixed a2 = area(a, point, c);
 	Fixed a3 = area(a, b, point);
 
-	// Garantir que o ponto não está sobre uma borda nem num vértice
 	if (a1 == Fixed(0) || a2 == Fixed(0) || a3 == Fixed(0))
 		return false;
 
