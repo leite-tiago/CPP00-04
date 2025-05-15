@@ -5,16 +5,16 @@
 #                                                     +:+ +:+         +:+      #
 #    By: tborges- <tborges-@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/05/14 12:02:18 by tborges-          #+#    #+#              #
-#    Updated: 2025/05/15 00:56:02 by tborges-         ###   ########.fr        #
+#    Created: 2025/05/15 00:45:05 by tborges-          #+#    #+#              #
+#    Updated: 2025/05/15 00:55:50 by tborges-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-
-NAME = DiamondTrap
+NAME = Polymorphism
 
 SRC_DIR = src
-SRC = $(SRC_DIR)/main.cpp $(SRC_DIR)/ClapTrap.cpp $(SRC_DIR)/ScavTrap.cpp $(SRC_DIR)/FragTrap.cpp $(SRC_DIR)/DiamondTrap.cpp
+SRC = $(SRC_DIR)/main.cpp $(SRC_DIR)/Cat.cpp $(SRC_DIR)/Dog.cpp $(SRC_DIR)/Animal.cpp \
+	$(SRC_DIR)/WrongAnimal.cpp $(SRC_DIR)/WrongCat.cpp
 
 CXX = @c++
 CXXFLAGS = -std=c++98 -Wall -Wextra -Werror
@@ -44,3 +44,4 @@ fclean: clean
 re: fclean all
 
 .PHONY: all clean fclean re
+
