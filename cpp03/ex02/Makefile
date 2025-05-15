@@ -6,7 +6,7 @@
 #    By: tborges- <tborges-@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/14 12:02:18 by tborges-          #+#    #+#              #
-#    Updated: 2025/05/14 17:44:11 by tborges-         ###   ########.fr        #
+#    Updated: 2025/05/15 14:16:31 by tborges-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@
 NAME = FragTrap
 
 SRC_DIR = src
-SRC = $(SRC_DIR)/main.cpp $(SRC_DIR)/ClapTrap.cpp $(SRC_DIR)/ScavTrap.cpp $(SRC_DIR)/FragTrap.cpp
+SRC = $(SRC_DIR)/main.cpp $(SRC_DIR)/ClapTrap.cpp  $(SRC_DIR)/FragTrap.cpp
 
 CXX = @c++
 CXXFLAGS = -std=c++98 -Wall -Wextra -Werror
