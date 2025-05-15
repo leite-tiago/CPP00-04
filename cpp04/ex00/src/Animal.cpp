@@ -6,7 +6,7 @@
 /*   By: tborges- <tborges-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/15 00:45:32 by tborges-          #+#    #+#             */
-/*   Updated: 2025/05/15 01:04:36 by tborges-         ###   ########.fr       */
+/*   Updated: 2025/05/15 01:52:14 by tborges-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,3 @@ void Animal::makeSound() const
 {
 	std::cout << "*Generic animal sound*\n";
 }
-
-
-

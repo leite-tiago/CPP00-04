@@ -6,7 +6,7 @@
 /*   By: tborges- <tborges-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/15 00:45:32 by tborges-          #+#    #+#             */
-/*   Updated: 2025/05/15 01:52:07 by tborges-         ###   ########.fr       */
+/*   Updated: 2025/05/15 01:51:50 by tborges-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,9 +39,4 @@ Animal::~Animal()
 std::string Animal::getType() const
 {
 	return type;
-}
-
-void Animal::makeSound() const
-{
-	std::cout << "*Generic animal sound*\n";
 }
